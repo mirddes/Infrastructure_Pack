@@ -31,7 +31,7 @@ UnitBlueprint {
         'UEF',
         'STRUCTURE',
         'ECONOMIC',
-        'TECH3',
+        'EXPERIMENTAL',
         'MASSSTORAGE',
         'ENERGYSTORAGE',
         'DRAGBUILD',
