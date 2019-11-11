@@ -1,0 +1,15 @@
+name = "Upgradeable HC Plant"
+uid = "dd6642d4-346c-8711-8106-df3de93fff655"
+version = 5
+copyright = "Gottenolm85;change to Serphim by Donnerbalken"
+description = "HC-Plants upgradeable with Seraphim giving the same as others"
+icon = "Mods/Hydro/icons/Titel.dds"
+selectable = true
+enabled = true
+exclusive = false
+ui_only = false
+requires = {}
+requiresNames = {}
+conflicts = {}
+before = {}
+after = {}
