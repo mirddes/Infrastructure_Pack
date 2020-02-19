@@ -70,7 +70,7 @@ UnitBlueprint {
             '<LOC ability_upgradable>Upgradeable',
             '<LOC ability_deathaoe>Volatile',
         },
-        AnimationUpgrade = '/mods/BlackOpsFAF-Unleashed/units/bab4209/bab4209_aupgrade.sca',
+        AnimationUpgrade = '/mods/Infrastructure Pack/AntiTeleport/units/bab4209/bab4209_aupgrade.sca',
         DamageEffects = {
             {
                 Bone = 0,

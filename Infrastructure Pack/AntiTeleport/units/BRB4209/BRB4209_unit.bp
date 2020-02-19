@@ -65,7 +65,7 @@ UnitBlueprint {
            '<LOC ability_upgradable>Upgradeable',
            '<LOC ability_deathaoe>Volatile',
         },
-        AnimationUpgrade = '/mods/BlackOpsFAF-Unleashed/units/brb4209/brb4209_aupgrade.sca',
+        AnimationUpgrade = '/mods/Infrastructure Pack/AntiTeleport/units/brb4209/brb4209_aupgrade.sca',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
