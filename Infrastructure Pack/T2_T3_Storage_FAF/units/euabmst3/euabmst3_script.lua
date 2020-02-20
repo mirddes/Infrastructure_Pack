@@ -9,7 +9,7 @@
 #****************************************************************************
 
 local AMassStorageUnit = import('/lua/aeonunits.lua').AMassStorageUnit
-local AdjacencyBuffs = import('/Mods/Infrastructure Pack/hook/lua/sim/AdjacencyBuffs.lua')
+local AdjacencyBuffs = import('/Mods/Infrastructure Pack/T2_T3_Storage_FAF/hook/lua/sim/AdjacencyBuffs.lua')
 
 euabmst3 = Class(AMassStorageUnit) {
 
