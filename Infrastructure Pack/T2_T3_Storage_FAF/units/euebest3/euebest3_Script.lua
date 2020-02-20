@@ -5,10 +5,10 @@
 #**
 #**  Summary  :  UEF Energy Storage
 #**
-#**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+#**  Copyright ï¿½ 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local TEnergyStorageUnit = import('/lua/terranunits.lua').TEnergyStorageUnit
-local AdjacencyBuffs = import('/Mods/T2_T3_Storage_FAF/hook/lua/sim/AdjacencyBuffs.lua')
+local AdjacencyBuffs = import('/Mods/Infrastructure Pack/hook/lua/sim/AdjacencyBuffs.lua')
 
 euebest3 = Class(TEnergyStorageUnit) {
 
