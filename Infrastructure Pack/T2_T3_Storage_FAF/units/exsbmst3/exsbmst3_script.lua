@@ -5,11 +5,11 @@
 #**
 #**  Summary  :  Seraphim Mass Storage
 #**
-#**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+#**  Copyright Â© 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 
 local SMassStorageUnit = import('/lua/seraphimunits.lua').SMassStorageUnit
-local AdjacencyBuffs = import('/Mods/T2_T3_Storage_FAF/hook/lua/sim/AdjacencyBuffs.lua')
+local AdjacencyBuffs = import('/Mods/Infrastructure Pack/hook/lua/sim/AdjacencyBuffs.lua')
 
 exsbmst3 = Class(SMassStorageUnit) {
 

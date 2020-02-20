@@ -5,7 +5,7 @@
 #**
 #**  Summary  :  Cybran Mass Storage
 #**
-#**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+#**  Copyright Â© 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 
 local CMassStorageUnit = import('/lua/cybranunits.lua').CMassStorageUnit

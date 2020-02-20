@@ -5,10 +5,10 @@
 #**
 #**  Summary  :  Aeon Energy Storage
 #**
-#**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+#**  Copyright Â© 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local SEnergyStorageUnit = import('/lua/seraphimunits.lua').SEnergyStorageUnit
-local AdjacencyBuffs = import('/Mods/T2_T3_Storage_FAF/hook/lua/sim/AdjacencyBuffs.lua')
+local AdjacencyBuffs = import('/Mods/Infrastructure Pack/hook/lua/sim/AdjacencyBuffs.lua')
 
 exsbest2 = Class(SEnergyStorageUnit) {
 
