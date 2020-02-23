@@ -31,6 +31,7 @@ UnitBlueprint {
         'AEON',
         'STRUCTURE',
         'ECONOMIC',
+        'DRAGBUILD',
         'EXPERIMENTAL',
         'MASSPRODUCTION',
         'MASSEXTRACTION',

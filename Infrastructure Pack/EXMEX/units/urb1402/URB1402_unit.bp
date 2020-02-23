@@ -32,6 +32,7 @@ UnitBlueprint {
         'STRUCTURE',
         'ECONOMIC',
         'EXPERIMENTAL',
+        'DRAGBUILD',
         'MASSPRODUCTION',
         'MASSEXTRACTION',
         'SIZE4',
