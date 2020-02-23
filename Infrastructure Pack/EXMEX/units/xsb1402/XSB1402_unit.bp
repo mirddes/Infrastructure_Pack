@@ -39,6 +39,7 @@ UnitBlueprint {
         'EXPERIMENTAL',
         'MASSPRODUCTION',
         'MASSEXTRACTION',
+        'DRAGBUILD',
         'SIZE4',
         'VISIBLETORECON',
         'RECLAIMABLE',
