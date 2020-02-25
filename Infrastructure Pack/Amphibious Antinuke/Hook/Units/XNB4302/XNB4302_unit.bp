@@ -1,5 +1,6 @@
 UnitBlueprint {
-    BlueprintId="xnl4302",Merge=true,
+    BlueprintId="xnb4302",Merge=true,
+    Icon = 'amph',
     Physics = {
 	    BuildOnLayerCaps = {
             	LAYER_Air = false,
