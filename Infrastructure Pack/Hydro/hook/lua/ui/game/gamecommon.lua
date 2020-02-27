@@ -11,6 +11,9 @@ local MyUnitIdTable = {
       	'shydro2',
 	'shydro3',
 	'shydro4',
+	'nhydro2',      	
+	'nhydro3',
+	'nhydro4',
 		     
   }
   local oldFileNameFn = GetUnitIconFileNames

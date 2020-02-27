@@ -12,6 +12,9 @@ do
       	'shydro2',
 	'shydro3',
 	'shydro4',
+      	'nhydro2',
+	'nhydro3',
+	'nhydro4',
    }
    --unit icon must be in /icons/units/. Put the full path to the /icons/ folder in here - note no / on the end!
    local MyIconPath = "/mods/Hydro"
