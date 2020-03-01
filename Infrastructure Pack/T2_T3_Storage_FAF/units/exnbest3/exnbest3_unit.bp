@@ -1,7 +1,7 @@
 -- T1 energy storage
 
 UnitBlueprint {
-    Adjacency = 'T1EnergyStorageAdjacencyBuffs',
+    Adjacency = 'T3EnergyStorageAdjacencyBuffs',
     Audio = {
         ActiveLoop = Sound {
             Bank = 'UEB',
@@ -26,23 +26,21 @@ UnitBlueprint {
     },
     BuildIconSortPriority = 90,
     Categories = {
-				 
+        'PRODUCTSC1',
         'SELECTABLE',
-        'BUILTBYTIER1ENGINEER',
-        'BUILTBYTIER2ENGINEER',
+
         'BUILTBYTIER3ENGINEER',
-        'BUILTBYTIER2COMMANDER',
         'BUILTBYTIER3COMMANDER',
         'NOMADS',
         'STRUCTURE',
         'ECONOMIC',
-        'TECH1',
+        'TECH3',
         'ENERGYSTORAGE',
         'DRAGBUILD',
         'SIZE4',
         'VISIBLETORECON',
         'RECLAIMABLE',
-        'SHOWQUEUE',					
+        'SHOWQUEUE',
         'SORTECONOMY',
     },
     CollisionOffsetZ = -0.1,
@@ -50,8 +48,8 @@ UnitBlueprint {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 2,
-        Health = 500,
-        MaxHealth = 500,
+        Health = 6500,
+        MaxHealth = 6500,
         RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
@@ -108,7 +106,7 @@ UnitBlueprint {
                     AlbedoName = 'XNB1105_lod1_albedo.dds',
                     LODCutoff = 215,
                     ShaderName = 'NomadsUnit',
-                    SpecularName = 'XNB1105_lod1_SpecTeam.dds',
+                    SpecularName = eXNBest3_lod1_SpecTeam.dds',
                 },
             },
         },
@@ -133,13 +131,15 @@ UnitBlueprint {
     },
     Economy = {
         AdjacentEnergyProductionMod = 2,
-        BuildCostEnergy = 1200,
-        BuildCostMass = 250,
-        BuildTime = 200,
+        BuildCostEnergy = 90000,
+        BuildCostMass = 500,
+        BuildTime = 240,
         RebuildBonusIds = {
             'xnb1105',
+            'exnbest2',
+            'exnbest3',
         },
-        StorageEnergy = 5000,
+        StorageEnergy = 60000,
     },
     General = {
         Category = 'Economy',
@@ -161,9 +161,9 @@ UnitBlueprint {
         FactionName = 'Nomads',
         Icon = 'amph',
         SelectionPriority = 5,
-        TechLevel = 'RULEUTL_Basic',
+        TechLevel = 'RULEUTL_Secret',
         UnitWeight = 1,
-        UpgradesTo = 'exnbest2',
+        UpgradesFrom = 'exnbest2',
     },
     Interface = {
         HelpText = '<LOC XNB1105_help>Energy Storage',
@@ -205,7 +205,7 @@ UnitBlueprint {
     StrategicIconSortPriority = 250,
     Weapon = {
         {
-            Damage = 2000,
+            Damage = 3000,
             DamageFriendly = true,
             DamageRadius = 5,
             DamageType = 'Normal',

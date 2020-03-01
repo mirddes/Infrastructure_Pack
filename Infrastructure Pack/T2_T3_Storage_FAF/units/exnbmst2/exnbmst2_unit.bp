@@ -1,21 +1,26 @@
--- T1 energy storage
+-- Mass storage
 
 UnitBlueprint {
-    Adjacency = 'T1EnergyStorageAdjacencyBuffs',
+    Adjacency = 'T2MassStorageAdjacencyBuffs',
     Audio = {
         ActiveLoop = Sound {
             Bank = 'UEB',
-            Cue = 'UEB1105_Active',
+            Cue = 'UEB1106_Active',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         Destroyed = Sound {
             Bank = 'NomadsDestroy',
-            Cue = 'Destroy_Sml_Structure_AreaDmg',
+            Cue = 'Destroy_Sml_Structure',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         DoneBeingBuilt = Sound {
             Bank = 'UEB',
-            Cue = 'UEB1105_Activate',
+            Cue = 'UEB1106_Activate',
+											 
+		  
+						
+								 
+											   
             LodCutoff = 'UnitMove_LodCutoff',
         },
         UISelection = Sound {
@@ -24,57 +29,53 @@ UnitBlueprint {
             LodCutoff = 'UnitMove_LodCutoff',
         },
     },
-    BuildIconSortPriority = 90,
+    BuildIconSortPriority = 60,
     Categories = {
-				 
+        'PRODUCTFA',					
         'SELECTABLE',
-        'BUILTBYTIER1ENGINEER',
         'BUILTBYTIER2ENGINEER',
         'BUILTBYTIER3ENGINEER',
         'BUILTBYTIER2COMMANDER',
         'BUILTBYTIER3COMMANDER',
         'NOMADS',
+				   
         'STRUCTURE',
         'ECONOMIC',
-        'TECH1',
-        'ENERGYSTORAGE',
+        'TECH2',
+        'MASSSTORAGE',
         'DRAGBUILD',
         'SIZE4',
         'VISIBLETORECON',
         'RECLAIMABLE',
-        'SHOWQUEUE',					
+					
         'SORTECONOMY',
     },
-    CollisionOffsetZ = -0.1,
+    CollisionOffsetY = 0,
     Defense = {
         AirThreatLevel = 0,
         ArmorType = 'Structure',
         EconomyThreatLevel = 2,
-        Health = 500,
-        MaxHealth = 500,
-        RegenRate = 0,
+       Health = 4800,
+        MaxHealth = 4800,
+		RegenRate = 0,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 0,
     },
-    Description = '<LOC XNB1105_desc>Energy Storage',
+    Description = '<LOC XNB1106_desc>Mass Storage',
     Display = {
-        Abilities = {
-            '<LOC ability_deathaoe>Volatile',
-        },
-        AnimationPermOpen = '/units/XNB1105/XNB1105_apermopen.sca',
         BlinkingLights = {
             {
                 BLBone = 0,
                 BLOffsetX = 0,
-                BLOffsetY = 0.75,
-                BLOffsetZ = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = 0.75,
                 BLScale = 1,
             },
             {
                 BLBone = 0,
                 BLOffsetX = 0,
-                BLOffsetY = -0.75,
-                BLOffsetZ = 0,
+                BLOffsetY = 0,
+                BLOffsetZ = -0.75,
                 BLScale = 1,
             },
             {
@@ -97,49 +98,89 @@ UnitBlueprint {
             Red = '/effects/emitters/light_red_03_emit.bp',
             Yellow = '/effects/emitters/light_yellow_02_emit.bp',
         },
+        DamageEffects = {
+            {
+                Bone = 0,
+                OffsetX = 0.3,
+                OffsetY = -0.4,
+                OffsetZ = 0.2,
+            },
+            {
+                Bone = 0,
+                OffsetX = -0.3,
+                OffsetY = -0.4,
+                OffsetZ = 0.2,
+            },
+            {
+                Bone = 0,
+                OffsetX = -0.3,
+                OffsetY = 0.4,
+                OffsetZ = 0.2,
+            },
+            {
+                Bone = 0,
+                OffsetX = 0.3,
+                OffsetY = 0.4,
+                OffsetZ = 0.2,
+            },
+        },
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
                 {
                     LODCutoff = 120,
+																					 
                     ShaderName = 'NomadsUnit',
                 },
                 {
-                    AlbedoName = 'XNB1105_lod1_albedo.dds',
+                    AlbedoName = 'exnbmst2_lod1_Albedo.dds',
                     LODCutoff = 215,
+																					 
                     ShaderName = 'NomadsUnit',
-                    SpecularName = 'XNB1105_lod1_SpecTeam.dds',
+                    SpecularName = 'exnbmst2_lod1_specteam.dds',
                 },
             },
         },
-        PlaceholderMeshName = 'UXB0014',
-        SpawnRandomRotation = false,
+        PlaceholderMeshName = 'UXB0012',
+        SpawnRandomRotation = true,
         Tarmacs = {
             {
                 Albedo = 'Tarmacs/Tar6x_nomads_01_albedo',
-                AlbedoKilled = 'Tarmacs/Tar6x_nomads_01e_albedo',
                 DeathLifetime = 300,
                 FadeOut = 150,
                 Length = 6.4,
                 Normal = 'Tarmacs/Tar6x_nomads_01_normals',
                 Orientations = {
                     0,
+					   
+						
+						
                 },
                 RemoveWhenDead = false,
                 Width = 6.4,
             },
         },
-        UniformScale = 0.35,
+        UniformScale = 0.2,
     },
     Economy = {
-        AdjacentEnergyProductionMod = 2,
-        BuildCostEnergy = 1200,
-        BuildCostMass = 250,
-        BuildTime = 200,
-        RebuildBonusIds = {
-            'xnb1105',
+        AdjacentMassProductionMod = 0.25,
+        BuildableCategory = {
+            'exnbmst3',
         },
-        StorageEnergy = 5000,
+        BuildCostEnergy = 3000,
+        BuildCostMass = 1000,
+        BuildRate = 20,
+        BuildTime = 75,
+        RebuildBonusIds = {
+            'xnb1106',
+            'exnbmst2',
+            'exnbmst3',
+        },
+        StorageMass = 2000,
+    },
+    Footprint = {
+        SizeX = 1,
+        SizeZ = 1,
     },
     General = {
         Category = 'Economy',
@@ -152,6 +193,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
+			RULEUCC_Pause = true,						
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = false,
@@ -161,16 +203,18 @@ UnitBlueprint {
         FactionName = 'Nomads',
         Icon = 'amph',
         SelectionPriority = 5,
-        TechLevel = 'RULEUTL_Basic',
+        TechLevel = 'RULEUTL_Advanced',
+											   
         UnitWeight = 1,
-        UpgradesTo = 'exnbest2',
+        UpgradesFrom = 'exnb1106',
+        UpgradesTo = 'exnbmst3',								
     },
     Interface = {
-        HelpText = '<LOC XNB1105_help>Energy Storage',
+        HelpText = '<LOC xnb1106_help>Mass Storage',
     },
     LifeBarHeight = 0.075,
-    LifeBarOffset = 0.45,
-    LifeBarSize = 1,
+    LifeBarOffset = 0.35,
+    LifeBarSize = 0.9,
     Physics = {
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -184,9 +228,9 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         FlattenSkirt = true,
         MaxSteerForce = 0,
-        MeshExtentsX = 1.6,
-        MeshExtentsY = 1.1,
-        MeshExtentsZ = 1.6,
+        MeshExtentsX = 1.5,
+        MeshExtentsY = 1.5,
+        MeshExtentsZ = 1.5,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_None',
         SkirtOffsetX = -0.5,
@@ -197,24 +241,12 @@ UnitBlueprint {
     },
     SelectionSizeX = 1,
     SelectionSizeZ = 1,
-    SelectionThickness = 0.5,
+    SelectionThickness = 0.6,
     SizeX = 1,
-    SizeY = 1.0,
+    SizeY = 0.8,
     SizeZ = 1,
-    StrategicIconName = 'icon_structure_energy',
+    StrategicIconName = 'icon_structure1_mass',
     StrategicIconSortPriority = 250,
-    Weapon = {
-        {
-            Damage = 2000,
-            DamageFriendly = true,
-            DamageRadius = 5,
-            DamageType = 'Normal',
-            DisplayName = 'Death Weapon',
-            DummyWeapon = true,
-            Label = 'DeathWeapon',
-            WeaponCategory = 'Death',
-        },
-    },
     Wreckage = {
         Blueprint = '/props/DefaultWreckage/DefaultWreckage_prop.bp',
         EnergyMult = 0,
