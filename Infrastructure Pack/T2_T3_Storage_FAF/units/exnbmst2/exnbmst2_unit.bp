@@ -47,7 +47,7 @@ UnitBlueprint {
         'SIZE4',
         'VISIBLETORECON',
         'RECLAIMABLE',
-					
+        'SHOWQUEUE',						
         'SORTECONOMY',
     },
     CollisionOffsetY = 0,

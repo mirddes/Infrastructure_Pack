@@ -124,10 +124,10 @@ UnitBlueprint {
                     ShaderName = 'NomadsUnit',
                 },
                 {
-                    AlbedoName = 'XNBmst3_lod1_albedo.dds',
+                    AlbedoName = 'exnbmst3_lod1_Albedo.dds',
                     LODCutoff = 215,
                     ShaderName = 'NomadsUnit',
-                    SpecularName = 'XNBmst3_lod1_specteam.dds',
+                    SpecularName = 'exnbmst3_lod1_specteam.dds',
                 },
             },
         },
@@ -192,7 +192,7 @@ UnitBlueprint {
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret,
         UnitWeight = 1,
-        UpgradesFrom = 'exnbmst2',								
+        UpgradesFrom = 'exnbmst2',
     },
     Interface = {
         HelpText = '<LOC xnb1106_help>Mass Storage',
