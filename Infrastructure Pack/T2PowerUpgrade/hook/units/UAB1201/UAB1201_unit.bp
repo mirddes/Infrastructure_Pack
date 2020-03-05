@@ -1,0 +1,8 @@
+UnitBlueprint {
+	Merge = true,
+	BlueprintId = "uab1201",
+	
+    General = {
+		UpgradesTo = 'uapowerup',
+    },
+}
