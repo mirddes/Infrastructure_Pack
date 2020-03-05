@@ -1,0 +1,8 @@
+UnitBlueprint {
+    Merge = true,
+	BlueprintId = "xsb1201",
+	
+    General = {
+		UpgradesTo = 'xspowerup',
+    },
+}
