@@ -102,6 +102,7 @@ UnitBlueprint {
         ProductionPerSecondMass = 18,
         RebuildBonusIds = {
             'XNB1302',
+			'xnb1402',
         },
     },
     Footprint = {
@@ -141,7 +142,7 @@ UnitBlueprint {
         VisionRadius = 20,
     },
     Interface = {
-        HelpText = '<LOC XNB1302_help>Mass Extractor',
+        HelpText = '<LOC XNB1402_help>Mass Extractor',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,

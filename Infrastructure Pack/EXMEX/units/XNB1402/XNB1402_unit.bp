@@ -33,7 +33,7 @@ UnitBlueprint {
         'STRUCTURE',
         'ECONOMIC',
         'EXPERIMENTAL',
-		'DRAGBUILD'			
+		'DRAGBUILD',			
         'MASSPRODUCTION',
         'MASSEXTRACTION',
         'SIZE4',
@@ -91,11 +91,11 @@ UnitBlueprint {
         UniformScale = 0.17
     },
     Economy = {
-        BuildCostEnergy = 31625,
-        BuildCostMass = 4600,
-        BuildTime = 3944,
-        MaintenanceConsumptionPerSecondEnergy = 54,
-        ProductionPerSecondMass = 18,
+        BuildCostEnergy = 92000,
+        BuildCostMass = 12000,
+        BuildTime = 3600,
+        MaintenanceConsumptionPerSecondEnergy = 90,
+        ProductionPerSecondMass = 40,
         RebuildBonusIds = {
             'XNB1402',
         },
