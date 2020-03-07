@@ -1,6 +1,6 @@
 name = "Infrastructure Pack"
-uid = "42269197-df2f-4f5c-be90-28c44c411bfb"
-version = 19.97
+uid = "42269197-df2f-4f5c-be90-28c44c411bfc"
+version = 19.98
 copyright = "copyleft"
 description = "Ejionar/Varaxis/mythixgirl/Puledro/Yaru/Atom7k/CaptainChunck/Jagged/Uveso/Mirddes/Donnerbalken/Gottenolm85/Quark/DoomHammer/BarryBlack/IceDragon/ExavierMacbeth/Lt_hawkeye/orangeknight/Tpapp/MarLo/Antz/Hemadric/Ghaleon/IceDragon/ExavierMacbeth/Lt_hawkeye/orangeknight/Tpapp/Softles/Nojoke185/ZephyrWarrior/Raistlfiren/Nocaps/Netjaxx"
 author = "ManyWonderfulPeople"
