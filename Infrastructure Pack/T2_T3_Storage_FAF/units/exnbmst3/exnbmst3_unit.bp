@@ -1,11 +1,9 @@
--- Mass storage
-
 UnitBlueprint {
     Adjacency = 'T3MassStorageAdjacencyBuffs',
     Audio = {
         ActiveLoop = Sound {
-            Bank = 'UEB',
-            Cue = 'UEB1106_Active',
+            Bank = 'URB',
+            Cue = 'URB1106_Active',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         Destroyed = Sound {
@@ -14,8 +12,8 @@ UnitBlueprint {
             LodCutoff = 'UnitMove_LodCutoff',
         },
         DoneBeingBuilt = Sound {
-            Bank = 'UEB',
-            Cue = 'UEB1106_Activate',
+            Bank = 'URB',
+            Cue = 'URB1106_Activate',
             LodCutoff = 'UnitMove_LodCutoff',
         },
         UISelection = Sound {
@@ -26,8 +24,8 @@ UnitBlueprint {
     },
     BuildIconSortPriority = 60,
     Categories = {
+        'PRODUCTSC1',
         'SELECTABLE',
-
         'BUILTBYTIER3ENGINEER',
         'BUILTBYTIER3COMMANDER',
         'NOMADS',
@@ -39,7 +37,7 @@ UnitBlueprint {
         'SIZE4',
         'VISIBLETORECON',
         'RECLAIMABLE',
-        'SHOWQUEUE',					
+        'SHOWQUEUE',
         'SORTECONOMY',
     },
     CollisionOffsetY = 0,
@@ -93,27 +91,15 @@ UnitBlueprint {
         DamageEffects = {
             {
                 Bone = 0,
-                OffsetX = 0.3,
-                OffsetY = -0.4,
-                OffsetZ = 0.2,
+                OffsetX = 0.2,
+                OffsetY = -0.05,
+                OffsetZ = 0.75,
             },
             {
                 Bone = 0,
-                OffsetX = -0.3,
-                OffsetY = -0.4,
-                OffsetZ = 0.2,
-            },
-            {
-                Bone = 0,
-                OffsetX = -0.3,
-                OffsetY = 0.4,
-                OffsetZ = 0.2,
-            },
-            {
-                Bone = 0,
-                OffsetX = 0.3,
-                OffsetY = 0.4,
-                OffsetZ = 0.2,
+                OffsetX = -0.2,
+                OffsetY = 0.225,
+                OffsetZ = 0.75,
             },
         },
         Mesh = {
@@ -142,21 +128,20 @@ UnitBlueprint {
                 Normal = 'Tarmacs/Tar6x_nomads_01_normals',
                 Orientations = {
                     0,
+                    90,
+                    180,
+                    270,
                 },
                 RemoveWhenDead = false,
                 Width = 6.4,
             },
         },
-        UniformScale = 0.2,
+        UniformScale = 0.375,
     },
     Economy = {
         AdjacentMassProductionMod = 0.25,
-							 
-					   
-				
         BuildCostEnergy = 6000,
         BuildCostMass = 4000,
-							   
         BuildTime = 200,
         RebuildBonusIds = {
             'xnb1106',
@@ -164,10 +149,6 @@ UnitBlueprint {
             'exnbmst3',
         },
         StorageMass = 6000,
-    },
-    Footprint = {
-        SizeX = 1,
-        SizeZ = 1,
     },
     General = {
         Category = 'Economy',
@@ -180,7 +161,7 @@ UnitBlueprint {
             RULEUCC_Move = false,
             RULEUCC_Nuke = false,
             RULEUCC_Patrol = false,
-			RULEUCC_Pause = true,						
+		RULEUCC_Pause = true,
             RULEUCC_Reclaim = false,
             RULEUCC_Repair = false,
             RULEUCC_RetaliateToggle = false,
@@ -190,16 +171,16 @@ UnitBlueprint {
         FactionName = 'Nomads',
         Icon = 'amph',
         SelectionPriority = 5,
-        TechLevel = 'RULEUTL_Secret,
+        TechLevel = 'RULEUTL_Secret',
         UnitWeight = 1,
         UpgradesFrom = 'exnbmst2',
     },
     Interface = {
-        HelpText = '<LOC xnb1106_help>Mass Storage',
+        HelpText = '<LOC urb1106_help>Mass Storage',
     },
     LifeBarHeight = 0.075,
     LifeBarOffset = 0.35,
-    LifeBarSize = 0.9,
+    LifeBarSize = 1,
     Physics = {
         BankingSlope = 0,
         BuildOnLayerCaps = {
@@ -213,9 +194,6 @@ UnitBlueprint {
         DragCoefficient = 0.2,
         FlattenSkirt = true,
         MaxSteerForce = 0,
-        MeshExtentsX = 1.5,
-        MeshExtentsY = 1.5,
-        MeshExtentsZ = 1.5,
         MinSpeedPercent = 0,
         MotionType = 'RULEUMT_None',
         SkirtOffsetX = -0.5,
@@ -224,12 +202,12 @@ UnitBlueprint {
         SkirtSizeZ = 2,
         TurnRate = 0,
     },
-    SelectionSizeX = 1,
-    SelectionSizeZ = 1,
+    SelectionSizeX = 0.65,
+    SelectionSizeZ = 0.65,
     SelectionThickness = 0.6,
-    SizeX = 1,
-    SizeY = 0.8,
-    SizeZ = 1,
+    SizeX = 0.8,
+    SizeY = 0.75,
+    SizeZ = 0.6,
     StrategicIconName = 'icon_structure1_mass',
     StrategicIconSortPriority = 250,
     Wreckage = {

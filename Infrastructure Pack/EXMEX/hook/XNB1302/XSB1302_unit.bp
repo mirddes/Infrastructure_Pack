@@ -1,0 +1,8 @@
+UnitBlueprint {
+    Merge = true,
+	BlueprintId = "xnb1302",
+	
+    General = {
+		UpgradesTo = 'xnb1402',
+    },
+}
