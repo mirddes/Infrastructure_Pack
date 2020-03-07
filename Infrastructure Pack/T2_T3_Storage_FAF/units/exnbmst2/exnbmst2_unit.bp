@@ -206,7 +206,7 @@ UnitBlueprint {
         TechLevel = 'RULEUTL_Advanced',
 											   
         UnitWeight = 1,
-        UpgradesFrom = 'exnb1106',
+        UpgradesFrom = 'xnb1106',
         UpgradesTo = 'exnbmst3',								
     },
     Interface = {
