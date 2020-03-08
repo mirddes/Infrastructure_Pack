@@ -23,7 +23,7 @@ IF EXIST "%UserProfile%\Documents\My Games\Gas Powered Games\Supreme Commander F
 	del /q InfrastructurePack.zip
 	rd /q /s "Infrastructure_Pack-master"
 	pause
-)else(
+) else (
 	echo Could not find the FAF mod directory... you will have to copy it manually...
 	echo Download it here: https://github.com/mirddes/Infrastructure_Pack/archive/master.zip
 	pause
