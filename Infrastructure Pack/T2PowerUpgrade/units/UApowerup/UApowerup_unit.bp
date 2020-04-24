@@ -192,7 +192,7 @@ UnitBlueprint {
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Secret',
         UnitWeight = 1,
-		UpgradesFrom = 'ueb1201','ueb1201',
+	UpgradesFrom = 'uab1201','uab1201',
 	},
     Intel = {
         VisionRadius = 20,
